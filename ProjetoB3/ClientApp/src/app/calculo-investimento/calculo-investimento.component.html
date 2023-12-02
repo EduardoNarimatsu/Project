@@ -1,0 +1,22 @@
+<div>
+  <h1>Calculo CDB</h1>
+
+  <label>Valor Inicial:</label>
+  <input type="number" [(ngModel)]="valorInicial" />
+
+  <label>Quantidade de Meses:</label>
+  <input type="number" [(ngModel)]="prazoMeses" />
+
+  <button (click)="calcularInvestimento()">Calcular</button>
+
+  <div *ngIf="resultadoCalculado">
+    <h2>Resultado</h2>
+    <p>Valor total bruto: {{ valorFinal }}</p>
+    <p>Valor total liquido: {{ valorLiquido }}</p>
+  </div>
+
+  <div *ngIf="errorMessage" class="alert alert-danger">
+    {{ errorMessage }}
+  </div>
+
+</div>
