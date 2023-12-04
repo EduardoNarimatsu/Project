@@ -28,6 +28,7 @@
     <None Remove="$(SpaRoot)**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
     <None Remove="System.CodeDom" />
+    <None Remove="ClientApp\.angular\cache\15.2.7\babel-webpack\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,6 +38,7 @@
   <ItemGroup>
     <Folder Include="Services\" />
     <Folder Include="Tests\" />
+    <Folder Include="ClientApp\.angular\cache\15.2.7\babel-webpack\" />
   </ItemGroup>
 
   <ItemGroup>
